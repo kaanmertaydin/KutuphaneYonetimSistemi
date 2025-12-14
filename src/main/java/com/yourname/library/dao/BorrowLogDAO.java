@@ -8,13 +8,6 @@ import java.util.List;
 
 public class BorrowLogDAO {
 
-    /**
-     * Kullanıcının ödünç aldığı ve henüz iade etmediği kitapları getirir.
-     * Tablo adı: loans
-     *
-     * @param userId Kullanıcının ID'si.
-     * @return String dizisi listesi: {Kitap Başlığı, Ödünç Tarihi, Son Teslim Tarihi}
-     */
     public List<String[]> getBorrowedBooksByUser(int userId) {
         List<String[]> borrowedBooks = new ArrayList<>();
 
